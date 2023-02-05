@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<style>
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: blue;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: green;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgrey;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    animation: form-fadein 1s linear;
+  }
+
+  @keyframes form-fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  table {
+    margin-top: 20px;
+  }
+
+  td {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  input[type="text"], textarea {
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+
+  input[type="submit"] {
+    background-color: green;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+
+  input[type="submit"]:hover {
+    background-color: blue;
+  }
+
+  input[type="radio"], input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  select {
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+  
+  
+  
+  
+  footer {
+  position: top;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+}
+
+footer p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  margin: 0;
+  padding: 10px 0;
+}
+  
+ 
+</style>
+
+<p>lorem30</p>
+
+</head>
+<body>
+
+
+
+<body>
+
+
+<footer>
+  <p>Copyright © Rohit Raman</p>
+</footer>
+
+
+<h1>Welcome To PTCI Noida </h1>
+<h2> Registration Form </h2>
+<form action="myregister.org">
+<table>
+
+<tr>
+	<td> Your Name </td>
+	<td><input type="text" name="fname"></td>
+</tr>
+
+<tr>
+	<td>Email ID </td>
+	<td><input type="text" name="email"></td>
+</tr>
+
+<tr>
+	<td>Mobile No.</td>
+	<td><input type="text" name="phone" value=" +91 "/></td>
+</tr>
+
+<tr>
+	<td>Gender</td>
+		<td>
+			<input type="radio" name="gender" value="Male"/> Male
+			<input type="radio" name="gender" value="Female"/> Female
+		</td>
+</tr>
+
+<tr>
+	<td>Course</td>
+		<td>
+			<input type="checkbox" name="mycourse" value="Physics"/> Physics<br/>
+			<input type="checkbox" name="mycourse" value="Chemistry"/> Chemistry<br/>
+			<input type="checkbox" name="mycourse" value="Maths"/> Maths<br/>
+		</td>
+</tr>
+
+<tr>
+	<td>Timing</td>
+	<td>
+		<select name="timings">
+		<option value=""/> Select me &#9200</option>
+		<option> 09AM to 12PM</option>
+		<option> 12PM to 03PM</option>
+		<option> 03PM to 06PM</option>
+		</select>
+	</td>
+</tr>
+
+
+<tr>
+	<td>Remarks</td>
+		<td><textarea name="remarks" rows="6" cols="25"></textarea>
+		</td>
+</tr>
+
+
+<tr>
+	<td colspan="2" align="center"><input type="submit" value="Hit Me &#128526"/></td>
+</tr>
+
+</table>
+</form>
+</head>
+</body>
+</html>
